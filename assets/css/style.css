@@ -1,4 +1,211 @@
-@font-face{font-family:"Lato";font-style:normal;font-weight:300;src:local("Lato Light"),url("fonts/Lato-Light.woff2") format("woff2")}@font-face{font-family:"Lato";font-style:italic;font-weight:300;src:local("Lato Light Italic"),url("fonts/Lato-LightItalic.woff2") format("woff2")}@font-face{font-family:"Lato";font-style:normal;font-weight:400;src:local("Lato Regular"),url("fonts/Lato-Regular.woff2") format("woff2")}@font-face{font-family:"Lato";font-style:italic;font-weight:400;src:local("Lato Italic"),url("fonts/Lato-Italic.woff2") format("woff2")}@font-face{font-family:"Lato";font-style:normal;font-weight:700;src:local("Lato Bold"),url("fonts/Lato-Bold.woff2") format("woff2")}@font-face{font-family:"Lato";font-style:italic;font-weight:700;src:local("Lato Bold Italic"),url("fonts/Lato-BoldItalic.woff2") format("woff2")}body,html{width:100%;height:100%}body,h1,h2,h3,h4,h5,h6{font-family: Open Sans,Arial,sans-serif;font-weight:700;}.topnav{font-size:14px}.lead{font-size:18px;font-weight:400}.intro-header{--opacidad-negro: 0.5;padding-top:50px;padding-bottom:50px;text-align:center;color:#f8f8f8;background:linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),url(../img/FondoEnTaxi.jpg) no-repeat center center;background-size:cover}.intro-message{position:relative;padding-top:20%;padding-bottom:20%}.intro-message>h1{margin:0;text-shadow:2px 2px 3px rgba(0,0,0,0.6);font-size:5em}.intro-divider{width:400px;border-top:1px solid #f8f8f8;border-bottom:1px solid rgba(0,0,0,0.2)}.intro-message>h3{text-shadow:2px 2px 3px rgba(0,0,0,0.6)}@media(max-width:767px){.intro-message{padding-bottom:15%}.intro-message>h1{font-size:3em}ul.intro-social-buttons>li{display:block;margin-bottom:20px;padding:0}ul.intro-social-buttons>li:last-child{margin-bottom:0}.intro-divider{width:100%}}.network-name{text-transform:uppercase;font-size:14px;font-weight:400;letter-spacing:2px}.content-section-a{padding:50px 0;background-color:#f8f8f8}.content-section-b{padding:50px 0;border-top:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7}.section-heading{margin-bottom:30px}.section-heading-spacer{float:left;width:200px;border-top:3px solid #e7e7e7}.banner{float: top;padding:100px 0;color:#f8f8f8;background:url(../img/FondoTaxi2.jpg) no-repeat center;background-size:cover}.banner h2{margin:0;text-shadow:2px 2px 3px rgba(0,0,0,0.6);font-size:3em}.banner ul{margin-bottom:0}.banner-social-buttons{float:right;margin-top:0}@media(max-width:1199px){ul.banner-social-buttons{float:left;margin-top:15px}}@media(max-width:767px){.banner h2{margin:0;text-shadow:2px 2px 3px rgba(0,0,0,0.6);font-size:3em}ul.banner-social-buttons>li{display:block;margin-bottom:20px;padding:0}ul.banner-social-buttons>li:last-child{margin-bottom:0}}footer{padding:20px 0;background-color:#f8f8f8}p.copyright{margin:10px 0 0}
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Lato Light"), url("fonts/Lato-Light.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Lato Light Italic"), url("fonts/Lato-LightItalic.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"), url("fonts/Lato-Regular.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Lato Italic"), url("fonts/Lato-Italic.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"), url("fonts/Lato-Bold.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Lato Bold Italic"), url("fonts/Lato-BoldItalic.woff2") format("woff2")
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Open Sans, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.topnav {
+    font-size: 14px
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400
+}
+
+.intro-header {
+    --opacidad-negro: 0.5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../img/FondoEnTaxi.jpg) no-repeat center center;
+    background-size: cover
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%
+}
+
+.intro-message>h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 5em
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.intro-message>h3 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6)
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%
+    }
+
+    .intro-message>h1 {
+        font-size: 3em
+    }
+
+    ul.intro-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0
+    }
+
+    ul.intro-social-buttons>li:last-child {
+        margin-bottom: 0
+    }
+
+    .intro-divider {
+        width: 100%
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7
+}
+
+.section-heading {
+    margin-bottom: 30px
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7
+}
+
+.banner {
+    float: top;
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/FondoTaxi2.jpg) no-repeat center;
+    background-size: cover
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em
+}
+
+.banner ul {
+    margin-bottom: 0
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px
+    }
+}
+
+@media(max-width:767px) {
+    .banner h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        font-size: 3em
+    }
+
+    ul.banner-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0
+    }
+
+    ul.banner-social-buttons>li:last-child {
+        margin-bottom: 0
+    }
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #f8f8f8
+}
+
+p.copyright {
+    margin: 10px 0 0
+}
 
 .botonReserva {
     font-family: "Poppins", Sans-serif;
@@ -29,11 +236,11 @@
     text-decoration: none;
 }
 
-.botonReserva:visited   {
+.botonReserva:visited {
     color: #fff;
 }
 
-.botonReserva:active   {
+.botonReserva:active {
     color: rgb(231, 229, 229);
     background: #c7960e;
 }
@@ -45,19 +252,20 @@ div[id] {
 html {
     scroll-behavior: smooth;
 }
+
 .bannerAcerca {
     --opacidad-negro: 0.7;
     float: top;
     padding: 80px 0;
-    color:#000000;
-    background-size:cover;
+    color: #000000;
+    background-size: cover;
     position: relative;
 }
 
 .bannerAcerca h2 {
     margin-left: 150px;
-    text-shadow:2px 2px 3px rgba(2, 1, 56, 0.6);
-    font-size:3em;
+    text-shadow: 2px 2px 3px rgba(2, 1, 56, 0.6);
+    font-size: 3em;
     text-align: start;
 }
 
@@ -69,23 +277,23 @@ html {
     --opacidad-negro: 0.5;
     float: top;
     padding: 80px 0;
-    color:#f8f8f8;
+    color: #f8f8f8;
     background: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(../img/FondoTaxi3.jpg) no-repeat center;
-    background-size:cover;
+    background-size: cover;
     position: relative;
 }
 
 .bannerVehiculos h2 {
     margin-bottom: 50px;
-    text-shadow:2px 2px 3px rgba(0,0,0,0.6);
-    font-size:3em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
     text-align: center;
 }
 
 .leadAcerca {
-    font-size:18px;
-    font-weight:300;
-    line-height:1.6;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
 
     margin: 0px 150px;
     text-align: start;
@@ -93,13 +301,15 @@ html {
 
 
 @media (min-width:768px) {
-    .leadAcerca{font-size:18px}
+    .leadAcerca {
+        font-size: 18px
+    }
 }
 
 .vehiculos h3 {
     margin-top: 50px;
     margin-bottom: 30px;
-    text-shadow:2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 28px;
     text-align: center;
 }
@@ -107,7 +317,7 @@ html {
 .intro-divider2 {
     width: 60%;
     border-top: 1px solid #fff;
-    border-bottom: 1px solid rgba(0,0,0,0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
 }
 
 .servicioAutos {
@@ -139,7 +349,7 @@ html {
     text-decoration: none;
 }
 
-.botonReserva2:active   {
+.botonReserva2:active {
     color: rgb(231, 229, 229);
     background: #c7960e;
 }
@@ -161,4 +371,3 @@ html {
 .fondoVehiculo {
     background: #fff;
 }
-
