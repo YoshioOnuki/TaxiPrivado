@@ -370,4 +370,24 @@ html {
 
 .fondoVehiculo {
     background: #fff;
+    width: 360px;
+    height: 200px;
+    overflow: hidden;
+    transition: all 1.5s;
+}
+
+.fondoVehiculo:hover {
+    filter: brightness(70%);
+}
+
+.servicioAutos .fondoVehiculo img{
+    transition: all 1.5s;
+    position: relative;
+    width: 360px;
+    height: 200px;
+}
+
+.servicioAutos .fondoVehiculo img:hover {
+    transform: scale(1.2);
+    transform-origin: center;
 }
